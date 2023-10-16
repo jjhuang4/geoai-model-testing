@@ -122,6 +122,9 @@ optimizer = torch.optim.SGD(params=model_0.parameters(), # parameters of target 
 
 # In[11]:
 
+# train on the GPU or on the CPU, if a GPU is not available
+device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
+
 import time
 start_time = time.time()
 

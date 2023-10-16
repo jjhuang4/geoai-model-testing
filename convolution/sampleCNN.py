@@ -109,6 +109,9 @@ optimizer = optim.Adam(cnn.parameters(), lr=0.01)
 
 # In[19]:
 
+# train on the GPU or on the CPU, if a GPU is not available
+device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
+
 
 import time
 start_time = time.time()
