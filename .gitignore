@@ -1,0 +1,12 @@
+# ignore all files in any directory under data
+
+data/
+
+# ignore all files in any directory under models/
+
+models/
+
+# ignore all .png files
+
+*.png
+
