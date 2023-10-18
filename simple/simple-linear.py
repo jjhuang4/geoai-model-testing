@@ -258,7 +258,7 @@ torch.save(obj=model_0.state_dict(), # only saving the state_dict() only saves t
 
 
 # Check the saved file path
-get_ipython().system('ls -l models/01_pytorch_workflow_model_0.pth')
+#get_ipython().system('ls -l models/01_pytorch_workflow_model_0.pth')
 
 
 # In[18]:
