@@ -95,6 +95,14 @@ class LinearRegressionModel(nn.Module): # <- almost everything in PyTorch is a n
 
 # In[8]:
 
+# Set manual seed since nn.Parameter are randomly initialzied
+torch.manual_seed(42)
+
+# Create an instance of the model (this is a subclass of nn.Module that contains nn.Parameter(s))
+model_0 = LinearRegressionModel()
+
+# Check the nn.Parameter(s) within the nn.Module subclass we created
+list(model_0.parameters())
 
 # Make predictions with model
 with torch.inference_mode(): 
