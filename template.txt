@@ -1,0 +1,12 @@
+#!/bin/tcsh
+#SBATCH --job-name simple
+#SBATCH --time=10:00
+#SBATCH -p gpu
+#SBATCH --gres=gpu:K40m:1
+#SBATCH -N 1
+#SBATCH --mail-type=begin
+#SBATCH --mail-type=end
+#SBATCH --mail-type=fail
+#SBATCH --mail-user=USER-EMAIL-HERE
+module load GPU
+python3 PYTHON-FILENAME-HERE
