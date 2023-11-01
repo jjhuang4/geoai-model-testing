@@ -7,4 +7,6 @@ Included are:
 - Image segmentation model from PyTorch
 - Basic GNN
 
+- sbatch script template for use with the keeling hpc cluster
+
 Aim to fine tune, test with keeling, and then set up for CyberGIS Compute
