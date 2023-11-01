@@ -434,7 +434,7 @@ import matplotlib.pyplot as plt
 from torchvision.utils import draw_bounding_boxes, draw_segmentation_masks
 
 
-image = read_image(cwd + "/test_data/test_img_" + "1" + ".png")
+image = read_image(cwd + "/test_images/test_img_" + "1" + ".png")
 eval_transform = get_transform(train=False)
 
 model.eval()
