@@ -4,10 +4,10 @@ WORKDIR /geoai-model-testing
 
 ADD . /geoai-model-testing
 
-RUN conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
+RUN mamba install matplotlib geopandas cudatoolkit pycocotools pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
 
 #previous successful 
-#mamba install -c conda-forge pytorch  pycocotools torchvision pandas numpy matplotlib geopandas cudatoolkit
+#mamba install -c conda-forge pytorch  pycocotools torchvision pandas numpy 
 
 #python -m pip install git+https://github.com/jjhuang4/geoai-model-testing@6643034e401eb5c1253d4d909e771985d3e5fd42
 #pip install --no-cache-dir -r requirements.txt
